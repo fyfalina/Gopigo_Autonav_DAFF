@@ -36,13 +36,13 @@ Pour lancer le projet, exécutez les commandes suivantes dans 2 terminaux diffé
 ### Lancer le contrôle de base du robot
 
 ```sh
-roslaunch bringup_car differential_driver.py
+roslaunch bringup_car differential_drives.launch
 ```
 
 ### Lancer la navigation autonome
 
 ```sh
-rosrun gopigo_navigation autonav.py
+rosrun gopigo_navigation auto_nav_DAFF.py
 ```
 
 ## Auteurs
