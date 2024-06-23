@@ -29,35 +29,17 @@ Ce package contient un script principal, `auto_nav_DAFF.py`, qui :
 
 1. Assurez-vous que le package `gopigo_navigation` est placé dans votre workspace ROS et que vous avez exécuté `catkin_make` et `source devel/setup.bash`.
 
-2. Installez les dépendances requises :
+2. Assurez-vous que le script de navigation est exécutable :
 
     ```sh
-    sudo apt-get install python3-rospy
-    sudo apt-get install ros-noetic-geometry-msgs
-    sudo apt-get install ros-noetic-nav-msgs
-    ```
-
-3. Assurez-vous que la bibliothèque RPi.GPIO est installée :
-
-    ```sh
-    sudo apt-get install python3-rpi.gpio
+    chmod +x src/gopigo_navigation/auto_nav_DAFF.py
     ```
 
 ## Utilisation
 
 Pour utiliser ce package, vous devez lancer le script principal qui gère la navigation autonome.
 
-1. Assurez-vous que d'avoir lancé le fichier launch dans le package bringup_car :
-
-    ```sh
-    roslaunch bringup_car differential_drives.launch
-    ```
-
-2. Assurez-vous que le script de navigation est exécutable :
-
-    ```sh
-    chmod +x src/gopigo_navigation/auto_nav_DAFF.py
-    ```
+1. Assurez-vous que d'avoir lancé le fichier `differential_drives.launch` dans le package bringup_car.
     
 3. Lancez le script de navigation :
 
